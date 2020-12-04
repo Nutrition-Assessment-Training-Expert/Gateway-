@@ -24,7 +24,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
+      defaultZone: https://admin:${jhipster.registry.password}@nate-registry.herokuapp.com/eureka/
 
 spring:
   profiles:
@@ -115,7 +115,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
-        base64-secret: bXktc2VjcmV0LWtleS13aGljaC1zaG91bGQtYmUtY2hhbmdlZC1pbi1wcm9kdWN0aW9uLWFuZC1iZS1iYXNlNjQtZW5jb2RlZAo=
+        base64-secret: YjA4OTQ5YjU3YTgyZmI4OWMxY2VhMWNjZTI3NzE0NWE0NDdiNTM0ZjM3OWM5ZjBjMzk0MmMwZTcwN2FiNzUxNmJjYTFhNWZhZmJiNTI2OTRiOTgxNGExN2Q5YTg2Y2U2NmU3ZTg0MjI0MmQ5YjM3Y2YwMzMwNmJmOTI1ZjRlNmQ=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000
